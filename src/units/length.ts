@@ -1,35 +1,5 @@
 // equivalent in cm, m and so on...
-interface LengthUnit {
-  [index: string]: number;
-  m: number;
-  km: number;
-  cm: number;
-  mm: number;
-  micrometer: number;
-  nanometer: number;
-  mi: number;
-  yard: number;
-  ft: number;
-  in: number;
-  lightYear: number;
-}
-
-export interface LengthUnitList {
-  [index: string]: LengthUnit;
-  m: LengthUnit;
-  km: LengthUnit;
-  cm: LengthUnit;
-  mm: LengthUnit;
-  micrometer: LengthUnit;
-  nanometer: LengthUnit;
-  mi: LengthUnit;
-  yard: LengthUnit;
-  ft: LengthUnit;
-  in: LengthUnit;
-  lightYear: LengthUnit;
-}
-
-const m: LengthUnit = {
+const m = {
   m: 1,
   km: 0.001,
   cm: 100,
@@ -43,7 +13,7 @@ const m: LengthUnit = {
   lightYear: 1.057008707e-16,
 };
 
-const km: LengthUnit = {
+const km = {
   m: 1000,
   km: 1,
   cm: 100000,
@@ -57,7 +27,7 @@ const km: LengthUnit = {
   lightYear: 1.057008707e-13,
 };
 
-const cm: LengthUnit = {
+const cm = {
   m: 0.01,
   km: 0.00001,
   cm: 1,
@@ -71,7 +41,7 @@ const cm: LengthUnit = {
   lightYear: 1.057008707e-18,
 };
 
-const mm: LengthUnit = {
+const mm = {
   m: 0.001,
   km: 0.000001,
   cm: 0.1,
@@ -85,7 +55,7 @@ const mm: LengthUnit = {
   lightYear: 1.057008707e-19,
 };
 
-const micrometer: LengthUnit = {
+const micrometer = {
   m: 0.000001,
   km: 9.999999999e-10,
   cm: 0.0001,
@@ -99,7 +69,7 @@ const micrometer: LengthUnit = {
   lightYear: 1.057008707e-22,
 };
 
-const nanometer: LengthUnit = {
+const nanometer = {
   m: 1e-9,
   km: 1e-12,
   cm: 1e-7,
@@ -113,7 +83,7 @@ const nanometer: LengthUnit = {
   lightYear: 1.057008707e-25,
 };
 
-const mi: LengthUnit = {
+const mi = {
   m: 1609.35,
   km: 1.60935,
   cm: 160935,
@@ -127,7 +97,7 @@ const mi: LengthUnit = {
   lightYear: 1.701096963e-13,
 };
 
-const yard: LengthUnit = {
+const yard = {
   m: 0.9144,
   km: 0.0009144,
   cm: 91.44,
@@ -141,7 +111,7 @@ const yard: LengthUnit = {
   lightYear: 9.665287622e-17,
 };
 
-const ft: LengthUnit = {
+const ft = {
   m: 0.3048,
   km: 0.0003048,
   cm: 30.48,
@@ -155,7 +125,7 @@ const ft: LengthUnit = {
   lightYear: 3.22176254e-17,
 };
 
-const inch: LengthUnit = {
+const inch = {
   m: 0.0254,
   km: 0.0000254,
   cm: 2.54,
@@ -169,7 +139,7 @@ const inch: LengthUnit = {
   lightYear: 2.684802117e-18,
 };
 
-const lightYear: LengthUnit = {
+const lightYear = {
   m: 9460660000000000,
   km: 9460660000000,
   cm: 946066000000000000,
@@ -183,7 +153,7 @@ const lightYear: LengthUnit = {
   lightYear: 1,
 };
 
-export const units: LengthUnitList = {
+export const units = {
   m,
   km,
   cm,
