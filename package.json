@@ -1,0 +1,15 @@
+{
+  "name": "global-unit-converter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:tsc": "tsc -w",
+    "start:nodemon": "nodemon dist/index.js",
+    "start": "concurrently yarn:start:*"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "concurrently": "^5.2.0"
+  }
+}
