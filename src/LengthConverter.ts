@@ -1,7 +1,7 @@
 import { Converter } from './Converter';
 import { units } from './units/length';
 
-type LenghtUnits =
+type LengthFormats =
   | 'm'
   | 'km'
   | 'cm'
@@ -14,7 +14,7 @@ type LenghtUnits =
   | 'in'
   | 'lightYear';
 
-class Length extends Converter<LenghtUnits> {
+class Length extends Converter<LengthFormats> {
   constructor() {
     super(units);
   }
