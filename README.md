@@ -1,4 +1,4 @@
-<h1 align="center">Global Unit Conversor</h1>
+<h1 align="center">Global Unit Converter</h1>
 
 Convert Everything!
 
