@@ -4,8 +4,10 @@ interface Convertable<T> {
   value: number;
 }
 
+type ParseFunction = (value: number) => number;
+
 interface Unit {
-  [index: string]: number;
+  [index: string]: number | ParseFunction;
 }
 
 interface UnitList {
@@ -26,6 +28,12 @@ export abstract class Converter<T extends string> {
       );
     }
 
-    return this.units[from][to] * value;
+    // it can be a multiplier or a formula
+    const factor = this.units[from][to];
+    if (typeof factor === 'function') {
+      return factor(value);
+    } else {
+      return factor * value;
+    }
   }
 }
