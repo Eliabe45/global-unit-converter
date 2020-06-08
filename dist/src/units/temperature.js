@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.units = exports.fahrenheitToCelsius = exports.celsiusToFahrenheit = void 0;
 var celsius = {
     fahrenheit: function (temperature) {
         return (temperature * 9) / 5 + 32;
@@ -31,11 +34,11 @@ var fahrenheit = {
         return (temperature - 32) / 1.8;
     },
 };
-export var celsiusToFahrenheit = function (temperature) {
+exports.celsiusToFahrenheit = function (temperature) {
     return;
 };
-export var fahrenheitToCelsius = function (temperature) { };
-export var units = {
+exports.fahrenheitToCelsius = function (temperature) { };
+exports.units = {
     celsius: celsius,
     fahrenheit: fahrenheit,
     kelvin: kelvin,

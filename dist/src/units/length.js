@@ -1,3 +1,6 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.units = void 0;
 // equivalent in cm, m and so on...
 var m = {
     m: 1,
@@ -142,7 +145,7 @@ var lightYear = {
     in: 372466929133858300,
     lightYear: 1,
 };
-export var units = {
+exports.units = {
     m: m,
     km: km,
     cm: cm,

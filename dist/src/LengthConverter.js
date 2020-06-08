@@ -1,3 +1,4 @@
+"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -11,13 +12,15 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-import { Converter } from './Converter';
-import { units } from './units/length';
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.LengthConverter = void 0;
+var Converter_1 = require("./Converter");
+var length_1 = require("./units/length");
 var Length = /** @class */ (function (_super) {
     __extends(Length, _super);
     function Length() {
-        return _super.call(this, units) || this;
+        return _super.call(this, length_1.units) || this;
     }
     return Length;
-}(Converter));
-export var LengthConverter = new Length();
+}(Converter_1.Converter));
+exports.LengthConverter = new Length();
