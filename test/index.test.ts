@@ -28,7 +28,7 @@ describe('Temperature Converter', () => {
         value: 354.213,
         to: 'celsius',
       })
-    ).toBe(179.00722222222223);
+    ).toBe(179.007222222);
   });
 
   test('convert fahrenheit to kelvin', () => {
@@ -38,6 +38,6 @@ describe('Temperature Converter', () => {
         value: 34.113,
         to: 'kelvin',
       })
-    ).toBe(274.32388888888886);
+    ).toBe(274.323888889);
   });
 });

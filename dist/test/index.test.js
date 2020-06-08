@@ -21,13 +21,13 @@ describe('Temperature Converter', function () {
             from: 'fahrenheit',
             value: 354.213,
             to: 'celsius',
-        })).toBe(179.00722222222223);
+        })).toBe(179.007222222);
     });
     test('convert fahrenheit to kelvin', function () {
         expect(index_1.TemperatureConverter.convert({
             from: 'fahrenheit',
             value: 34.113,
             to: 'kelvin',
-        })).toBe(274.32388888888886);
+        })).toBe(274.323888889);
     });
 });

@@ -1,12 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.units = exports.fahrenheitToCelsius = exports.celsiusToFahrenheit = void 0;
+var utils_1 = require("../utils");
 var celsius = {
     fahrenheit: function (temperature) {
-        return (temperature * 9) / 5 + 32;
+        return utils_1.toPrecision((temperature * 9) / 5 + 32);
     },
     kelvin: function (temperature) {
-        return temperature + 273.15;
+        return utils_1.toPrecision(temperature + 273.15);
     },
     celsius: function (temperature) {
         return temperature;
@@ -14,13 +15,13 @@ var celsius = {
 };
 var kelvin = {
     fahrenheit: function (temperature) {
-        return (temperature * 9) / 5 - 459.67;
+        return utils_1.toPrecision((temperature * 9) / 5 - 459.67);
     },
     kelvin: function (temperature) {
         return temperature;
     },
     celsius: function (temperature) {
-        return temperature - 273.15;
+        return utils_1.toPrecision(temperature - 273.15);
     },
 };
 var fahrenheit = {
@@ -28,10 +29,10 @@ var fahrenheit = {
         return temperature;
     },
     kelvin: function (temperature) {
-        return ((temperature + 459.67) * 5) / 9;
+        return utils_1.toPrecision(((temperature + 459.67) * 5) / 9);
     },
     celsius: function (temperature) {
-        return (temperature - 32) / 1.8;
+        return utils_1.toPrecision((temperature - 32) / 1.8);
     },
 };
 exports.celsiusToFahrenheit = function (temperature) {
