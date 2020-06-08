@@ -23,13 +23,13 @@ npm install global-unit-converter
 ```js
 import { LengthConverter, TemperatureConverter } from 'global-unit-converter';
 
-const milesToKilometers = LengthConverter({
+const milesToKilometers = LengthConverter.convert({
   from: 'mi',
   value: 220,
   to: 'km',
 });
 
-const celsiusToFahrenheit = TemperatureConverter({
+const celsiusToFahrenheit = TemperatureConverter.convert({
   from: 'celsius',
   value: 100,
   to: 'fahrenheit',
