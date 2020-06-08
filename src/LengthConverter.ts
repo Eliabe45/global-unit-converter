@@ -19,5 +19,4 @@ class Length extends Converter<LengthFormats> {
     super(units);
   }
 }
-
 export const LengthConverter = new Length();
