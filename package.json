@@ -1,6 +1,6 @@
 {
   "name": "global-unit-converter",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
