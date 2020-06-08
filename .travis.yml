@@ -1,4 +1,7 @@
 language:javascript
-script:
-  - npm test
-  - npm build
+jobs:
+  include:
+    - stage: npm test
+      script: test
+    - stage: build
+      script: npm build
