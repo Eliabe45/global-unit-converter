@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Converter = void 0;
 var Converter = /** @class */ (function () {
     function Converter(units) {
         this.units = units;
@@ -21,4 +18,4 @@ var Converter = /** @class */ (function () {
     };
     return Converter;
 }());
-exports.Converter = Converter;
+export { Converter };

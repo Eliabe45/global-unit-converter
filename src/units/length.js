@@ -1,3 +1,6 @@
+"use strict";
+exports.__esModule = true;
+exports.units = void 0;
 // equivalent in cm, m and so on...
 var m = {
     m: 1,
@@ -9,8 +12,8 @@ var m = {
     mi: 0.0006213689,
     yard: 0.0006213689,
     ft: 3.280839895,
-    in: 39.37007874,
-    lightYear: 1.057008707e-16,
+    "in": 39.37007874,
+    lightYear: 1.057008707e-16
 };
 var km = {
     m: 1000,
@@ -22,8 +25,8 @@ var km = {
     mi: 0.6213688756,
     yard: 1093.6132983,
     ft: 3280.839895,
-    in: 39370.07874,
-    lightYear: 1.057008707e-13,
+    "in": 39370.07874,
+    lightYear: 1.057008707e-13
 };
 var cm = {
     m: 0.01,
@@ -35,8 +38,8 @@ var cm = {
     mi: 0.0000062137,
     yard: 0.010936133,
     ft: 0.032808399,
-    in: 0.3937007874,
-    lightYear: 1.057008707e-18,
+    "in": 0.3937007874,
+    lightYear: 1.057008707e-18
 };
 var mm = {
     m: 0.001,
@@ -48,8 +51,8 @@ var mm = {
     mi: 6.213688756e-7,
     yard: 0.0010936133,
     ft: 0.0032808399,
-    in: 0.0393700787,
-    lightYear: 1.057008707e-19,
+    "in": 0.0393700787,
+    lightYear: 1.057008707e-19
 };
 var micrometer = {
     m: 0.000001,
@@ -61,8 +64,8 @@ var micrometer = {
     mi: 6.213688756e-10,
     yard: 0.0000010936,
     ft: 0.0000032808,
-    in: 0.0000393701,
-    lightYear: 1.057008707e-22,
+    "in": 0.0000393701,
+    lightYear: 1.057008707e-22
 };
 var nanometer = {
     m: 1e-9,
@@ -74,8 +77,8 @@ var nanometer = {
     mi: 6.213688756e-13,
     yard: 1.093613298e-9,
     ft: 3.280839895e-9,
-    in: 3.937007874e-8,
-    lightYear: 1.057008707e-25,
+    "in": 3.937007874e-8,
+    lightYear: 1.057008707e-25
 };
 var mi = {
     m: 1609.35,
@@ -87,8 +90,8 @@ var mi = {
     mi: 1,
     yard: 1760.0065617,
     ft: 5280.019685,
-    in: 63360.23622,
-    lightYear: 1.701096963e-13,
+    "in": 63360.23622,
+    lightYear: 1.701096963e-13
 };
 var yard = {
     m: 0.9144,
@@ -100,8 +103,8 @@ var yard = {
     mi: 0.0005681797,
     yard: 1,
     ft: 3,
-    in: 36,
-    lightYear: 9.665287622e-17,
+    "in": 36,
+    lightYear: 9.665287622e-17
 };
 var ft = {
     m: 0.3048,
@@ -113,8 +116,8 @@ var ft = {
     mi: 0.0001893932,
     yard: 0.3333333333,
     ft: 1,
-    in: 12,
-    lightYear: 3.22176254e-17,
+    "in": 12,
+    lightYear: 3.22176254e-17
 };
 var inch = {
     m: 0.0254,
@@ -126,8 +129,8 @@ var inch = {
     mi: 0.0000157828,
     yard: 0.0277777778,
     ft: 0.0833333333,
-    in: 1,
-    lightYear: 2.684802117e-18,
+    "in": 1,
+    lightYear: 2.684802117e-18
 };
 var lightYear = {
     m: 9460660000000000,
@@ -139,10 +142,10 @@ var lightYear = {
     mi: 5878559666946,
     yard: 10346303587051618,
     ft: 31038910761154856,
-    in: 372466929133858300,
-    lightYear: 1,
+    "in": 372466929133858300,
+    lightYear: 1
 };
-export var units = {
+exports.units = {
     m: m,
     km: km,
     cm: cm,
@@ -152,6 +155,6 @@ export var units = {
     mi: mi,
     yard: yard,
     ft: ft,
-    in: inch,
-    lightYear: lightYear,
+    "in": inch,
+    lightYear: lightYear
 };

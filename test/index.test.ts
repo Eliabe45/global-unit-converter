@@ -1,4 +1,4 @@
-import { TemperatureConverter } from '../src';
+import { TemperatureConverter } from '../src/index';
 
 describe('Temperature Converter', () => {
   test('convert celsius to fahrenheit', () => {
