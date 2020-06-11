@@ -37,3 +37,6 @@ const celsiusToFahrenheit = TemperatureConverter.convert({
   to: 'fahrenheit',
 });
 ```
+# Supported unit systems
+
+Currently, only Length and Temperature systems are supported. There will be more in the future.
