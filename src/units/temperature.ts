@@ -36,12 +36,6 @@ const fahrenheit = {
   },
 };
 
-export const celsiusToFahrenheit = (temperature: number) => {
-  return;
-};
-
-export const fahrenheitToCelsius = (temperature: number) => {};
-
 export const units = {
   celsius,
   fahrenheit,
