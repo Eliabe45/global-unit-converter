@@ -2,11 +2,10 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'production',
-  entry: path.join(__dirname, 'src', 'index'),
+  entry: path.join(__dirname, 'src', 'browser'),
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'global-unit-converter.min.js',
-    libraryTarget: 'commonjs2',
   },
   module: {
     rules: [
